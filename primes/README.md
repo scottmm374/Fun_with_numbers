@@ -1,5 +1,8 @@
 # Fun with Primes
 
+![CSV Primes Catapillar and flowers](../images/flowers_and_catapillars.png)
+![CSV Primes](../images/flowers.png)
+
 ### Table of Contents
 
 ### Tech
