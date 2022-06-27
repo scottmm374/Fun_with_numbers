@@ -2,19 +2,21 @@ import math
 
 
 def main():
+ 
 
     cols, num_range = input(int("Cols, Range: ")).split()
+    calc_rows(cols, num_range)
 
 
+#*<----------------------------CALCULATE ROWS------------------------------------------------->
 
-#*<----------------------------------------------------------------------------->
 def calc_rows(cols:int, num_range:int):
 
     num_rows = math.ceil(num_range/cols)
 
     return(num_rows, cols, num_range)
 
-#*<----------------------------------------------------------------------------->
+#*<-----------------------------CREATE LIST OF PRIMES------------------------------------------------>
 def generate_primes(n: int) -> list:
     """
         Generates a list of Prime numbers, equal to n(max range of numbers)
@@ -36,7 +38,7 @@ def generate_primes(n: int) -> list:
     return prime_list
 
 
-#*<----------------------------------------------------------------------------->
+#*<--------------------------------CREATE SEQUENTIAL NUMBERS LIST--------------------------------------------->
 def create_integer_matrix(cols:int, rows:int) -> list:
     """
      Creating an empty matrix equal to column widths filled with zeros to save space
@@ -44,7 +46,7 @@ def create_integer_matrix(cols:int, rows:int) -> list:
      rows: integer - calculated rows needed for range
      return : List, Matrix filled with sequential numbers
      """
-    matrix = [[0] * cols for x in range(1,rows)]
+    matrix = [[0] * cols for j in range(1,rows)]
 
     num = 0
     for y in range(len(matrix)):
@@ -53,7 +55,8 @@ def create_integer_matrix(cols:int, rows:int) -> list:
                 matrix[y][x] = num
     return matrix
 
-#*<----------------------------------------------------------------------------->
+#*<------------------------------REMOVE ALL BUT PRIMES----------------------------------------------->
+
 def remove_non_primes(arr:list, primes:list, cols:int) -> list:
     # Checks array with sequential numbers against primes list
     for row in range(len(arr)):

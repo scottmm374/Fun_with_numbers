@@ -8,12 +8,14 @@
 ### Tech
 
 - Python3
-- CSV module
+- CSV
 
 ---
 
-## Add Functionality
+## TODO
 
+- [ ] Refactor to class
+- [ ] write function with algorithm I created to find Prime columns
 - [ ] Write primes to csv instead of generating each time/ also incrementally create primes as they get larger
 - [ ] FUnction to calculate rows/range
 - [ ] Try to optimize prime search
@@ -37,10 +39,16 @@
 
 ---
 
-### Tech to consider and why
+### Possible Tech
 
 - Flask (visual representation, website)
+- Pandas
 
 ## About this project
 
-### Discoveries
+### Interesting Discoveries !!!
+
+- Primes Never have a digit root of [3, 6, 9]
+- Digit roots of [1,2,4,5,7,8] seem to be fairly equal in distribution
+- I can Calculate which Columns Primes show up in on any Width graph size
+- Specific widths, primes only show up in Prime and Subprime Numbered columns (divisible 3,6,9) <--- More testing needed to confirm
