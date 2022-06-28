@@ -17,7 +17,7 @@
 - [ ] Refactor to class
 - [ ] write function with algorithm I created to find Prime columns
 - [ ] Write primes to csv instead of generating each time/ also incrementally create primes as they get larger
-- [ ] FUnction to calculate rows/range
+- [ ] Function to calculate rows/range
 - [ ] Try to optimize prime search
 
 ---
